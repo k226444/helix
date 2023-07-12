@@ -2644,3 +2644,16 @@ file-types = ["webc"]
 roots = []
 indent = { tab-width = 2, unit = "  " }
 grammar = "html"
+
+[[language]]
+name = "objc"
+scope = "source.objc"
+file-types = ["m", "mm", "M"]
+injection-regex = "objc"
+roots = ["xcodeproj"]
+comment-token = "//"
+indent = { tab-width = 2, unit = "  " }
+
+[[grammar]]
+name = "objc"
+source = { git = "https://github.com/jiyee/tree-sitter-objc", rev = "afec0de5a32d5894070b67932d6ff09e4f7c5879" }
